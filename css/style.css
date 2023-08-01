@@ -110,7 +110,7 @@ footer{
 
 
 @media screen and (max-width: 480px) {
-    .contenedor{
+    .contenedor-index{
         display: flex;
         flex-direction: column;    
     }
