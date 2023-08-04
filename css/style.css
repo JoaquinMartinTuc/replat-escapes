@@ -257,39 +257,24 @@ footer{
 
 
 
-.contenedorInst {  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . . . . . ."
-      ". imagen imagen . . . ."
-      ". imagen imagen . sala sala ."
-      ". imagen imagen . . . ."
-      ". . . . . . ."
-      ". . . . . . ."
-      ". . . . . . ."
-      ". . nombre2 nombre2 nombre2 . ."
-      ". . . . . . ."
-      ". imagen2 imagen2 . imagen3 imagen3 ."
-      ". imagen2 imagen2 . imagen3 imagen3 ."
-      ". imagen2 imagen2 . imagen3 imagen3 ."
-      ". imagen2 imagen2 . imagen3 imagen3 ."
-      ". . . . . . ."
-      ". . . . . . ."
-      ". . . . . . ."
-      ". . . . . . ."
-      ". . . . nombre4 . ."
-      ". . . imagen5 imagen5 imagen5 ."
-      ". nombre3 . imagen5 imagen5 imagen5 ."
-      ". imagen4 . imagen5 imagen5 imagen5 ."
-      ". imagen4 . imagen5 imagen5 imagen5 ."
-      ". imagen4 . imagen5 imagen5 imagen5 ."
-      ". imagen4 . imagen5 imagen5 imagen5 ."
-      ". . . . . . .";
-      place-items: center;
+.contenedorInst {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "imagen1 . . . ."
+      "imagen1 texto1 . texto2 ."
+      "imagen1 . imagen2 imagen2 imagen2"
+      ". . imagen2 imagen2 imagen2"
+      ". . . . ."
+      "imagen3 imagen3 texto3 imagen4 imagen4"
+      "imagen3 imagen3 texto3 imagen4 imagen4"
+      "imagen3 imagen3 texto3 imagen4 imagen4";
+      place-items: center; 
   }
   
   .cajaInst{
@@ -298,23 +283,36 @@ footer{
 
   }
 
-  .cajaInst1 { grid-area: sala; }
+  .cajaInst1 { 
+    grid-area: texto1; 
+ }
   
-  .cajaInst6 { grid-area: imagen; }
+  .cajaInst6 { 
+    grid-area: imagen1;
+    background-color: red;   
+}
   
-  .cajaInst5 { grid-area: imagen2; }
+  .cajaInst5 { 
+    grid-area: imagen2;
+ }
   
-  .cajaInst7 { grid-area: imagen3; }
+  .cajaInst7 {
+     grid-area: imagen3;
+ }
   
-  .cajaInst8 { grid-area: imagen4; }
+  .cajaInst8 {
+     grid-area: imagen4;
+ }
+
+  .cajaInst2 {
+     grid-area: texto2;
+     align-self: end;
+ }
   
-  .cajaInst9 { grid-area: imagen5; }
+  .cajaInst3 {
+     grid-area: texto3;
+ }
   
-  .cajaInst2 { grid-area: nombre4; }
-  
-  .cajaInst3 { grid-area: nombre3; }
-  
-  .cajaInst4 { grid-area: nombre2; }
 
 
 .contenedorForm{
