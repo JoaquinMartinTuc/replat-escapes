@@ -1,0 +1,90 @@
+.contenedor-quehacemos{
+    background-color: #227652;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    ".      foto"
+    "titulo foto"
+    "info   foto"
+    ".      foto";
+    place-items: center;
+}
+
+
+.caja-quehacemos1{
+    color: white;
+    grid-area: titulo;
+    font-family: "tenso", sans-serif;
+
+
+}
+
+.caja-quehacemos2{
+    color: white;
+    grid-area: info;
+    text-align: center;
+    font-family: "tenso", sans-serif;
+    font-weight: 300;
+}
+
+.caja-quehacemos3{
+    background-color: #010101;
+    grid-area: foto;
+}
+
+
+.contenedor-proveedores{
+    background-color: #227652;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "foto1 ."
+    "foto1 proveedores"
+    "foto1 info"
+    "foto1 .";
+    place-items: center;
+}
+
+.contenedor-proveedores1{
+    color: white;
+    grid-area: proveedores;
+    font-family: "tenso", sans-serif;
+}
+
+.contenedor-proveedores2{
+    color: white;
+    grid-area: info;
+    text-align: center;
+    font-family: "tenso", sans-serif;
+    font-weight: 300;
+}
+
+.contenedor-proveedores3{
+    grid-area: foto1;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .contenedor-proveedores {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .qhInfo{
+        padding: 2rem;
+    }
+
+
+
+    .contenedor-quehacemos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-proveedores3{
+        padding-bottom: 5rem;
+    }
+}

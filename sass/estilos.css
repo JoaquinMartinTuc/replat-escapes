@@ -1,0 +1,279 @@
+@import url("https://use.typekit.net/pvj5oye.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.fondo-index {
+  background-image: url(../img/fondo\ auto.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #010101;
+  padding: 5rem;
+}
+
+.caja {
+  font-family: "tenso", sans-serif;
+  color: white;
+}
+
+.contenedor-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "caja1 caja2" "caja6 caja3" "caja4 caja5";
+  place-items: center;
+  gap: 1rem;
+}
+
+.caja1 {
+  grid-area: caja1;
+  align-self: end;
+}
+
+.caja2 {
+  grid-area: caja2;
+  border: 8px solid #227652;
+  align-self: start;
+}
+
+.caja3 {
+  grid-area: caja3;
+  border: 8px solid #227652;
+  align-self: end;
+  margin-top: 5rem;
+}
+
+.caja4 {
+  grid-area: caja4;
+}
+
+.caja5 {
+  grid-area: caja5;
+  border: 8px solid #227652;
+  margin-top: 6rem;
+}
+
+.caja6 {
+  grid-area: caja6;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .contenedor-index {
+    display: flex;
+    flex-direction: column;
+  }
+  .caja1 {
+    align-self: center;
+  }
+}
+.contenedor-quehacemos {
+  background-color: #227652;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: ".      foto" "titulo foto" "info   foto" ".      foto";
+  place-items: center;
+}
+
+.caja-quehacemos1 {
+  color: white;
+  grid-area: titulo;
+  font-family: "tenso", sans-serif;
+}
+
+.caja-quehacemos2 {
+  color: white;
+  grid-area: info;
+  text-align: center;
+  font-family: "tenso", sans-serif;
+  font-weight: 300;
+}
+
+.caja-quehacemos3 {
+  background-color: #010101;
+  grid-area: foto;
+}
+
+.contenedor-proveedores {
+  background-color: #227652;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "foto1 ." "foto1 proveedores" "foto1 info" "foto1 .";
+  place-items: center;
+}
+
+.contenedor-proveedores1 {
+  color: white;
+  grid-area: proveedores;
+  font-family: "tenso", sans-serif;
+}
+
+.contenedor-proveedores2 {
+  color: white;
+  grid-area: info;
+  text-align: center;
+  font-family: "tenso", sans-serif;
+  font-weight: 300;
+}
+
+.contenedor-proveedores3 {
+  grid-area: foto1;
+}
+
+@media screen and (max-width: 480px) {
+  .contenedor-proveedores {
+    display: flex;
+    flex-direction: column;
+  }
+  .qhInfo {
+    padding: 2rem;
+  }
+  .contenedor-quehacemos {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor-proveedores3 {
+    padding-bottom: 5rem;
+  }
+}
+.prFondo {
+  background-color: #227652;
+}
+
+.productos {
+  color: white;
+  font-family: "tenso", sans-serif;
+  padding: 2rem;
+  text-align: center;
+}
+
+.prStock {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.cajaPr {
+  border: 8px solid black;
+}
+
+.fondoInst {
+  background-color: #227652;
+}
+
+.contenedorInst {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "imagen1 . . . ." "imagen1 texto1 . texto2 ." "imagen1 . imagen2 imagen2 imagen2" ". . imagen2 imagen2 imagen2" ". . . . ." "imagen3 imagen3 texto3 imagen4 imagen4" "imagen3 imagen3 texto3 imagen4 imagen4" "imagen3 imagen3 texto3 imagen4 imagen4";
+  place-items: center;
+}
+
+.cajaInst {
+  font-family: "tenso", sans-serif;
+  color: white;
+}
+
+.cajaInst1 {
+  grid-area: texto1;
+}
+
+.cajaInst6 {
+  grid-area: imagen1;
+  border: 5px solid black;
+}
+
+.cajaInst5 {
+  grid-area: imagen2;
+  border: 5px solid black;
+}
+
+.cajaInst7 {
+  grid-area: imagen3;
+  border: 5px solid black;
+}
+
+.cajaInst8 {
+  grid-area: imagen4;
+  border: 5px solid black;
+}
+
+.cajaInst2 {
+  grid-area: texto2;
+  align-self: end;
+}
+
+.cajaInst3 {
+  grid-area: texto3;
+}
+
+.contenedorForm {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.contactoFondo {
+  background-color: #227652;
+}
+
+.estiloContacto {
+  color: white;
+  font-family: "tenso", sans-serif;
+}
+
+.estiloContacto2 {
+  color: white;
+  font-family: "tenso", sans-serif;
+  font-weight: 300;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #227652;
+}
+
+.pie {
+  padding: 2rem;
+  color: white;
+  font-family: "tenso", sans-serif;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .pie {
+    padding: 1rem;
+    color: white;
+  }
+}/*# sourceMappingURL=estilos.css.map */

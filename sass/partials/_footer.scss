@@ -1,0 +1,28 @@
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #227652;
+}
+
+.pie{
+    padding: 2rem;
+    color: white;
+    font-family: "tenso", sans-serif;
+    font-weight: 300;
+}
+
+
+@media screen and (max-width: 480px) {
+    footer{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .pie{
+            padding: 1rem;
+            color: white;
+        }
+    
+}
+    

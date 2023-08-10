@@ -1,0 +1,30 @@
+.prFondo{
+    background-color: #227652;
+}
+
+
+.productos{
+    color: white;
+    font-family: "tenso", sans-serif;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.prStock {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+
+.cajaPr{
+    border: 8px solid black;
+}
+
+.fondoInst{
+    background-color: #227652;
+}
