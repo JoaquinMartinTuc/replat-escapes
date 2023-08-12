@@ -2,18 +2,25 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #227652;
+
+    .pie{
+        padding: 2rem;
+        color: white;
+        font-family: "tenso", sans-serif;
+        font-weight: 300;
+        text-align: center;
+    }
+
 }
 
-.pie{
-    padding: 2rem;
-    color: white;
-    font-family: "tenso", sans-serif;
-    font-weight: 300;
+
+.logo-wp{
+    width: 8rem;
 }
 
 
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 1200px) {
     footer{
             display: flex;
             flex-direction: column;

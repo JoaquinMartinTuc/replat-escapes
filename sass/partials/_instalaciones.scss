@@ -1,4 +1,8 @@
-.contenedorInst {
+
+.fondoInst{
+  background-color: #227652;
+
+  .contenedorInst {
     padding-left: 3rem;
     padding-right: 3rem;
     display: grid; 
@@ -15,44 +19,55 @@
       "imagen3 imagen3 texto3 imagen4 imagen4"
       "imagen3 imagen3 texto3 imagen4 imagen4"
       "imagen3 imagen3 texto3 imagen4 imagen4";
-      place-items: center; 
-  }
-  
-  .cajaInst{
-    font-family: "tenso", sans-serif;
-    color: white;
+      place-items: center;
 
+
+      .cajaInst{
+        font-family: "tenso", sans-serif;
+        color: white;
+    
+      }
+    
+      .cajaInst1 { 
+        grid-area: texto1; 
+     }
+      
+      .cajaInst6 { 
+        grid-area: imagen1;
+        border: 5px solid black;  
+    }
+      
+      .cajaInst5 { 
+        grid-area: imagen2;
+        border: 5px solid black;
+     }
+      
+      .cajaInst7 {
+         grid-area: imagen3;
+         border: 5px solid black;
+     }
+      
+      .cajaInst8 {
+         grid-area: imagen4;
+         border: 5px solid black;
+     }
+    
+      .cajaInst2 {
+         grid-area: texto2;
+         align-self: end;
+     }
+      
+      .cajaInst3 {
+         grid-area: texto3;
+     }
+
+     
   }
 
-  .cajaInst1 { 
-    grid-area: texto1; 
- }
-  
-  .cajaInst6 { 
-    grid-area: imagen1;
-    border: 5px solid black;  
+
 }
-  
-  .cajaInst5 { 
-    grid-area: imagen2;
-    border: 5px solid black;
- }
-  
-  .cajaInst7 {
-     grid-area: imagen3;
-     border: 5px solid black;
- }
-  
-  .cajaInst8 {
-     grid-area: imagen4;
-     border: 5px solid black;
- }
 
-  .cajaInst2 {
-     grid-area: texto2;
-     align-self: end;
- }
+
+
+
   
-  .cajaInst3 {
-     grid-area: texto3;
- }
