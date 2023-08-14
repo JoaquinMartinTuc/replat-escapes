@@ -23,7 +23,7 @@
     gap: 1rem;
 
     .caja{ 
-        font-family: "tenso", sans-serif;
+        font-family: $fuentePrincipal;
         color: white;
     }
     
@@ -36,13 +36,13 @@
     
     .caja2{
         grid-area: caja2;
-        border: 8px solid #227652;
+        border: 8px solid $colorPrincipal;
         align-self: start;
     }
     
     .caja3{
         grid-area: caja3;
-        border: 8px solid #227652;
+        border: 8px solid $colorPrincipal;
         align-self: end;
         margin-top: 5rem;
     }
@@ -53,7 +53,7 @@
     
     .caja5{
         grid-area: caja5;
-        border: 8px solid #227652;
+        border: 8px solid $colorPrincipal;
         margin-top: 6rem;
         
     }

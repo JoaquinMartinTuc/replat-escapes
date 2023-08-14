@@ -1,6 +1,6 @@
 
 .contacto{
-    background-color: #227652;
+    background-color: $colorPrincipal;
     padding: 2rem;
 
     .contenedorUbicacion{
@@ -12,13 +12,13 @@
     
         .estiloContacto{
             color: white;
-            font-family: "tenso", sans-serif;
+            font-family: $fuentePrincipal;
         }
         
         
         .estiloContacto2{
             color: white;
-            font-family: "tenso", sans-serif;
+            font-family: $fuentePrincipal;
             font-weight: 300;
         }
         

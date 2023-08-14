@@ -1,6 +1,6 @@
 
 .fondoInst{
-  background-color: #227652;
+  background-color: $colorPrincipal;
 
   .contenedorInst {
     padding-left: 3rem;
@@ -23,7 +23,7 @@
 
 
       .cajaInst{
-        font-family: "tenso", sans-serif;
+        font-family: $fuentePrincipal;
         color: white;
     
       }

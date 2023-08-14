@@ -19,7 +19,7 @@
         color: white;
         grid-area: info;
         text-align: center;
-        font-family: "tenso", sans-serif;
+        font-family: $fuentePrincipal;
         font-weight: 300;
         padding-left: 5rem;
         padding-right: 5rem;
@@ -33,7 +33,7 @@
     .contenedor-proveedores1{
         color: white;
         grid-area: proveedores;
-        font-family: "tenso", sans-serif;
+        font-family: $fuentePrincipal;
         padding-top: 5rem;
     }
     
@@ -41,7 +41,7 @@
         color: white;
         grid-area: infoPr;
         text-align: center;
-        font-family: "tenso", sans-serif;
+        font-family: $fuentePrincipal;
         font-weight: 300;
         padding-left: 15rem;
         padding-right: 15rem;
@@ -54,7 +54,7 @@
 .caja-quehacemos1{
     color: white;
     grid-area: titulo;
-    font-family: "tenso", sans-serif;
+    font-family: $fuentePrincipal;
     align-self: end;
 }
 
