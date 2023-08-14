@@ -1,5 +1,5 @@
 .prFondo{
-    background-color: #227652;
+    background-color: $colorPrincipal;
 }
 
 
@@ -26,3 +26,13 @@
 
 }
 
+
+@media screen and (max-width: 880px) {
+    .prStock {
+        grid-template-columns: 1fr 1fr;
+
+        .cajaPr {
+            border: 4px solid black;
+        }
+    }
+}

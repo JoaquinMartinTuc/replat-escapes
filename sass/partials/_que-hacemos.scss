@@ -1,5 +1,5 @@
 .contenedor-quehacemos{
-    background-color: #227652;
+    background-color: #010101;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -7,16 +7,13 @@
     ".      foto"
     "titulo foto"
     "info   foto"
-    ".      foto";
+    ".      foto"
+    "proveedores  proveedores"
+    "infoPr  infoPr";
     place-items: center;
+    padding-bottom: 8rem;
 
-    .caja-quehacemos1{
-        color: white;
-        grid-area: titulo;
-        font-family: "tenso", sans-serif;
     
-    
-    }
     
     .caja-quehacemos2{
         color: white;
@@ -24,71 +21,60 @@
         text-align: center;
         font-family: "tenso", sans-serif;
         font-weight: 300;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
     
     .caja-quehacemos3{
-        background-color: #010101;
+        
         grid-area: foto;
     }
-    
-}
-
-
-
-
-.contenedor-proveedores{
-    background-color: #227652;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "foto1 ."
-    "foto1 proveedores"
-    "foto1 info"
-    "foto1 .";
-    place-items: center;
 
     .contenedor-proveedores1{
         color: white;
         grid-area: proveedores;
         font-family: "tenso", sans-serif;
+        padding-top: 5rem;
     }
     
     .contenedor-proveedores2{
         color: white;
-        grid-area: info;
+        grid-area: infoPr;
         text-align: center;
         font-family: "tenso", sans-serif;
         font-weight: 300;
+        padding-left: 15rem;
+        padding-right: 15rem;
+
     }
     
-    .contenedor-proveedores3{
-        grid-area: foto1;
-    }
     
+}
+
+.caja-quehacemos1{
+    color: white;
+    grid-area: titulo;
+    font-family: "tenso", sans-serif;
+    align-self: end;
 }
 
 
 
-
-@media screen and (max-width: 480px) {
-    .contenedor-proveedores {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .qhInfo{
-        padding: 2rem;
-    }
-
-
+@media screen and (max-width: 980px) {
 
     .contenedor-quehacemos {
         display: flex;
         flex-direction: column;
+        padding-top: 5rem;
     }
 
-    .contenedor-proveedores3{
-        padding-bottom: 5rem;
+    .caja-quehacemos1{
+        align-self: center;
     }
+
+    .contenedor-proveedores1{
+        align-self: center;
+    }
+
+
 }

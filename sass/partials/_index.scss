@@ -87,16 +87,3 @@
         }
     }
 }
-
-@media screen and (max-width: 480px) {
-    .contenedor-index{
-        display: flex;
-        flex-direction: column;    
-    }
-
-    .caja1{
-        align-self: center;
-        
-    }
-
-}

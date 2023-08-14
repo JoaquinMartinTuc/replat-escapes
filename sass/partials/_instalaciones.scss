@@ -68,6 +68,46 @@
 }
 
 
+@media screen and (max-width: 870px) {
+  .fondoInst{
 
+    .contenedorInst{
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
 
+      .cajaInst{ 
+        margin: 2rem;
+      }
+
+      .cajaInst1{
+        order: 1;
+      }
+
+      .cajaInst2{
+        align-self: center;
+        order: 3;
+        
+      }
+
+      .cajaInst3{
+        margin-top: 2rem;
+        order: 5;
+      }
+
+      .cajaInst5{
+        order: 2;
+      }
+
+      .cajaInst6{
+        order: 4;
+      }
+
+      .cajaInst7{
+        order: 6;
+      }
+    }
+  }
+  
+}
   

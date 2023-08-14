@@ -80,27 +80,14 @@ img {
     align-self: center;
   }
 }
-@media screen and (max-width: 480px) {
-  .contenedor-index {
-    display: flex;
-    flex-direction: column;
-  }
-  .caja1 {
-    align-self: center;
-  }
-}
 .contenedor-quehacemos {
-  background-color: #227652;
+  background-color: #010101;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: ".      foto" "titulo foto" "info   foto" ".      foto";
+  grid-template-areas: ".      foto" "titulo foto" "info   foto" ".      foto" "proveedores  proveedores" "infoPr  infoPr";
   place-items: center;
-}
-.contenedor-quehacemos .caja-quehacemos1 {
-  color: white;
-  grid-area: titulo;
-  font-family: "tenso", sans-serif;
+  padding-bottom: 8rem;
 }
 .contenedor-quehacemos .caja-quehacemos2 {
   color: white;
@@ -108,50 +95,46 @@ img {
   text-align: center;
   font-family: "tenso", sans-serif;
   font-weight: 300;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 .contenedor-quehacemos .caja-quehacemos3 {
-  background-color: #010101;
   grid-area: foto;
 }
-
-.contenedor-proveedores {
-  background-color: #227652;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "foto1 ." "foto1 proveedores" "foto1 info" "foto1 .";
-  place-items: center;
-}
-.contenedor-proveedores .contenedor-proveedores1 {
+.contenedor-quehacemos .contenedor-proveedores1 {
   color: white;
   grid-area: proveedores;
   font-family: "tenso", sans-serif;
+  padding-top: 5rem;
 }
-.contenedor-proveedores .contenedor-proveedores2 {
+.contenedor-quehacemos .contenedor-proveedores2 {
   color: white;
-  grid-area: info;
+  grid-area: infoPr;
   text-align: center;
   font-family: "tenso", sans-serif;
   font-weight: 300;
-}
-.contenedor-proveedores .contenedor-proveedores3 {
-  grid-area: foto1;
+  padding-left: 15rem;
+  padding-right: 15rem;
 }
 
-@media screen and (max-width: 480px) {
-  .contenedor-proveedores {
-    display: flex;
-    flex-direction: column;
-  }
-  .qhInfo {
-    padding: 2rem;
-  }
+.caja-quehacemos1 {
+  color: white;
+  grid-area: titulo;
+  font-family: "tenso", sans-serif;
+  align-self: end;
+}
+
+@media screen and (max-width: 980px) {
   .contenedor-quehacemos {
     display: flex;
     flex-direction: column;
+    padding-top: 5rem;
   }
-  .contenedor-proveedores3 {
-    padding-bottom: 5rem;
+  .caja-quehacemos1 {
+    align-self: center;
+  }
+  .contenedor-proveedores1 {
+    align-self: center;
   }
 }
 .prFondo {
@@ -177,6 +160,14 @@ img {
   border: 8px solid black;
 }
 
+@media screen and (max-width: 880px) {
+  .prStock {
+    grid-template-columns: 1fr 1fr;
+  }
+  .prStock .cajaPr {
+    border: 4px solid black;
+  }
+}
 .fondoInst {
   background-color: #227652;
 }
@@ -222,24 +213,65 @@ img {
   grid-area: texto3;
 }
 
-.contactoFondo {
-  background-color: #227652;
+@media screen and (max-width: 870px) {
+  .fondoInst .contenedorInst {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .fondoInst .contenedorInst .cajaInst {
+    margin: 2rem;
+  }
+  .fondoInst .contenedorInst .cajaInst1 {
+    order: 1;
+  }
+  .fondoInst .contenedorInst .cajaInst2 {
+    align-self: center;
+    order: 3;
+  }
+  .fondoInst .contenedorInst .cajaInst3 {
+    margin-top: 2rem;
+    order: 5;
+  }
+  .fondoInst .contenedorInst .cajaInst5 {
+    order: 2;
+  }
+  .fondoInst .contenedorInst .cajaInst6 {
+    order: 4;
+  }
+  .fondoInst .contenedorInst .cajaInst7 {
+    order: 6;
+  }
 }
-.contactoFondo .contenedorForm {
+.contacto {
+  background-color: #227652;
+  padding: 2rem;
+}
+.contacto .contenedorUbicacion {
   padding: 4rem;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
 }
-.contactoFondo .contenedorForm .estiloContacto {
+.contacto .contenedorUbicacion .estiloContacto {
   color: white;
   font-family: "tenso", sans-serif;
 }
-.contactoFondo .contenedorForm .estiloContacto2 {
+.contacto .contenedorUbicacion .estiloContacto2 {
   color: white;
   font-family: "tenso", sans-serif;
   font-weight: 300;
+}
+.contacto .contenedorForm {
+  margin: 0rem 5rem 0rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+}
+.contacto .contenedorForm .form {
+  margin: 0.5rem;
 }
 
 footer {

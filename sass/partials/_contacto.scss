@@ -1,8 +1,9 @@
 
-.contactoFondo{
+.contacto{
     background-color: #227652;
+    padding: 2rem;
 
-    .contenedorForm{
+    .contenedorUbicacion{
         padding: 4rem;
         display: flex;
         flex-direction: column;
@@ -23,7 +24,20 @@
         
     }
     
-    
+    .contenedorForm{
+        margin: 0rem 5rem 0rem 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1rem;
+
+        .form{
+            margin: 0.5rem;
+        }
+
+
+
+    }
 }
 
 
