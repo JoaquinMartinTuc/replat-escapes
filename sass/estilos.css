@@ -176,6 +176,7 @@ img {
 }
 .fondoInst {
   background-color: #227652;
+  overflow-x: hidden;
 }
 .fondoInst .contenedorInst {
   padding-left: 3rem;
