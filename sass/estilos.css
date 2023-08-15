@@ -85,9 +85,18 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: ".      foto" "titulo foto" "info   foto" ".      foto" "proveedores  proveedores" "infoPr  infoPr";
+  grid-template-areas: ".      foto" "titulo foto" "info   foto" ".      foto" "proveedores  proveedores" "imgPr1  imgPr1" "imgPr2  imgPr2" "imgPr3  imgPr3" "imgPr4  imgPr4";
   place-items: center;
   padding-bottom: 8rem;
+}
+.contenedor-quehacemos .caja-proveedores {
+  padding: 3rem;
+}
+.contenedor-quehacemos .caja-quehacemos1 {
+  color: white;
+  grid-area: titulo;
+  font-family: "tenso", sans-serif;
+  align-self: end;
 }
 .contenedor-quehacemos .caja-quehacemos2 {
   color: white;
@@ -101,27 +110,24 @@ img {
 .contenedor-quehacemos .caja-quehacemos3 {
   grid-area: foto;
 }
-.contenedor-quehacemos .contenedor-proveedores1 {
+.contenedor-quehacemos .contenedor-proveedores {
   color: white;
   grid-area: proveedores;
   font-family: "tenso", sans-serif;
   padding-top: 5rem;
 }
 .contenedor-quehacemos .contenedor-proveedores2 {
-  color: white;
-  grid-area: infoPr;
-  text-align: center;
-  font-family: "tenso", sans-serif;
-  font-weight: 300;
-  padding-left: 15rem;
-  padding-right: 15rem;
+  grid-area: imgPr1;
 }
-
-.caja-quehacemos1 {
-  color: white;
-  grid-area: titulo;
-  font-family: "tenso", sans-serif;
-  align-self: end;
+.contenedor-quehacemos .contenedor-proveedores3 {
+  grid-area: imgPr2;
+  width: 25rem;
+}
+.contenedor-quehacemos .contenedor-proveedores4 {
+  grid-area: imgPr3;
+}
+.contenedor-quehacemos .contenedor-proveedores5 {
+  grid-area: imgPr4;
 }
 
 @media screen and (max-width: 980px) {
@@ -130,10 +136,10 @@ img {
     flex-direction: column;
     padding-top: 5rem;
   }
-  .caja-quehacemos1 {
+  .contenedor-quehacemos .caja-quehacemos1 {
     align-self: center;
   }
-  .contenedor-proveedores1 {
+  .contenedor-quehacemos .contenedor-proveedores1 {
     align-self: center;
   }
 }
@@ -255,13 +261,9 @@ img {
   align-items: center;
 }
 .contacto .contenedorUbicacion .estiloContacto {
+  padding: 2rem;
   color: white;
   font-family: "tenso", sans-serif;
-}
-.contacto .contenedorUbicacion .estiloContacto2 {
-  color: white;
-  font-family: "tenso", sans-serif;
-  font-weight: 300;
 }
 .contacto .contenedorForm {
   margin: 0rem 5rem 0rem 5rem;

@@ -9,9 +9,24 @@
     "info   foto"
     ".      foto"
     "proveedores  proveedores"
-    "infoPr  infoPr";
+    "imgPr1  imgPr1"
+    "imgPr2  imgPr2"
+    "imgPr3  imgPr3"
+    "imgPr4  imgPr4";
     place-items: center;
     padding-bottom: 8rem;
+
+    .caja-proveedores{
+        padding: 3rem;
+    }
+
+
+    .caja-quehacemos1{
+        color: white;
+        grid-area: titulo;
+        font-family: $fuentePrincipal;
+        align-self: end;
+    }
 
     
     
@@ -26,11 +41,11 @@
     }
     
     .caja-quehacemos3{
-        
         grid-area: foto;
+
     }
 
-    .contenedor-proveedores1{
+    .contenedor-proveedores{
         color: white;
         grid-area: proveedores;
         font-family: $fuentePrincipal;
@@ -38,26 +53,24 @@
     }
     
     .contenedor-proveedores2{
-        color: white;
-        grid-area: infoPr;
-        text-align: center;
-        font-family: $fuentePrincipal;
-        font-weight: 300;
-        padding-left: 15rem;
-        padding-right: 15rem;
+        grid-area: imgPr1;
 
     }
     
+    .contenedor-proveedores3{
+        grid-area: imgPr2;
+        width: 25rem;
+    }
     
-}
+    .contenedor-proveedores4{
+        grid-area: imgPr3;
 
-.caja-quehacemos1{
-    color: white;
-    grid-area: titulo;
-    font-family: $fuentePrincipal;
-    align-self: end;
-}
+    }
 
+    .contenedor-proveedores5{
+        grid-area: imgPr4;
+    }
+}
 
 
 @media screen and (max-width: 980px) {
@@ -66,15 +79,20 @@
         display: flex;
         flex-direction: column;
         padding-top: 5rem;
+
+        .caja-quehacemos1{
+            align-self: center;
+        }
+
+
+        .contenedor-proveedores1{
+            align-self: center;
+        }
+    
     }
-
-    .caja-quehacemos1{
-        align-self: center;
-    }
-
-    .contenedor-proveedores1{
-        align-self: center;
-    }
-
-
 }
+
+    
+
+    
+
