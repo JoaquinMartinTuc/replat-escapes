@@ -185,7 +185,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas: "imagen1 . . . ." "imagen1 texto1 . texto2 ." "imagen1 . imagen2 imagen2 imagen2" ". . imagen2 imagen2 imagen2" ". . . . ." "imagen3 imagen3 texto3 imagen4 imagen4" "imagen3 imagen3 texto3 imagen4 imagen4" "imagen3 imagen3 texto3 imagen4 imagen4";
+  grid-template-areas: "imagen1 . . . ." "imagen1 texto1 . texto2 ." "imagen1 . imagen2 imagen2 imagen2" ". . imagen2 imagen2 imagen2" "imagen3 imagen3 texto3 imagen4 imagen4" "imagen3 imagen3 texto3 imagen4 imagen4" "imagen3 imagen3 texto3 imagen4 imagen4";
   place-items: center;
 }
 .fondoInst .contenedorInst .cajaInst {
@@ -240,17 +240,23 @@ img {
     order: 5;
   }
   .fondoInst .contenedorInst .cajaInst5 {
-    order: 2;
+    order: 4;
   }
   .fondoInst .contenedorInst .cajaInst6 {
-    order: 4;
+    order: 2;
   }
   .fondoInst .contenedorInst .cajaInst7 {
     order: 6;
   }
+  .fondoInst .contenedorInst .cajaInst8 {
+    order: 7;
+  }
 }
 .contacto {
-  background-color: #227652;
+  background-image: url(../img/Captura\ de\ pantalla\ 2023-08-14\ 165338.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
   padding: 2rem;
 }
 .contacto .contenedorUbicacion {
