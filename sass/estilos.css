@@ -66,26 +66,28 @@ img {
 }
 
 @media screen and (max-width: 1200px) {
-  .contenedor-index {
+  .fondo-index .contenedor-index {
     display: flex;
     flex-direction: column;
   }
-  .contenedor-index .caja1 {
+  .fondo-index .contenedor-index .caja1 {
     align-self: center;
   }
-  .contenedor-index .caja2 {
+  .fondo-index .contenedor-index .caja2 {
     align-self: center;
   }
-  .contenedor-index .caja3 {
+  .fondo-index .contenedor-index .caja3 {
     align-self: center;
+  }
+  .fondo-index .contenedor-index .caja1 {
+    font-size: 1.4rem;
   }
 }
 .contenedor-quehacemos {
   background-color: #010101;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: ".      foto" "titulo foto" "info   foto" ".      foto" "proveedores  proveedores" "imgPr1  imgPr1" "imgPr2  imgPr2" "imgPr3  imgPr3" "imgPr4  imgPr4";
+  grid-template-areas: ".      foto" "titulo foto" "info   foto" ".      foto" "proveedores  proveedores" "imgPr1  imgPr1" "imgPr2  imgPr2" "imgPr3  imgPr3" "imgPr4  imgPr4" "titulo2 titulo2" "info2  info2";
   place-items: center;
   padding-bottom: 8rem;
 }
@@ -106,6 +108,7 @@ img {
   font-weight: 300;
   padding-left: 5rem;
   padding-right: 5rem;
+  width: 100%;
 }
 .contenedor-quehacemos .caja-quehacemos3 {
   grid-area: foto;
@@ -129,6 +132,21 @@ img {
 .contenedor-quehacemos .contenedor-proveedores5 {
   grid-area: imgPr4;
 }
+.contenedor-quehacemos .cajaHistoria {
+  padding-top: 6rem;
+  color: white;
+  font-family: "tenso", sans-serif;
+}
+.contenedor-quehacemos .cajaHistoria1 {
+  grid-area: titulo2;
+  text-align: center;
+}
+.contenedor-quehacemos .cajaHistoria2 {
+  padding: 3rem;
+  grid-area: info2;
+  text-align: center;
+  font-weight: 300;
+}
 
 @media screen and (max-width: 980px) {
   .contenedor-quehacemos {
@@ -143,8 +161,13 @@ img {
     align-self: center;
   }
 }
+@media screen and (max-width: 480px) {
+  .contenedor-quehacemos .contenedor-proveedores3 {
+    width: 100%;
+  }
+}
 .prFondo {
-  background-color: #227652;
+  background-color: black;
 }
 
 .productos {
@@ -157,13 +180,12 @@ img {
 .prStock {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
   place-items: center;
   padding: 3rem;
   gap: 2rem;
 }
 .prStock .cajaPr {
-  border: 8px solid black;
+  border: 8px solid #2b3035;
 }
 
 @media screen and (max-width: 880px) {
@@ -171,7 +193,7 @@ img {
     grid-template-columns: 1fr 1fr;
   }
   .prStock .cajaPr {
-    border: 4px solid black;
+    border: 4px solid #2b3035;
   }
 }
 .fondoInst {
@@ -180,12 +202,10 @@ img {
   overflow-x: hidden;
 }
 .fondoInst .contenedorInst {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding: 3rem;
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.4fr 1.6fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas: "texto1 . . . ." "imagen1 . . texto2 ." ". . imagen2 imagen2 imagen2" ". . imagen2 imagen2 imagen2" "imagen3 imagen3 texto3 imagen4 imagen4" "imagen3 imagen3 texto3 imagen4 imagen4" "imagen3 imagen3 texto3 imagen4 imagen4";
   place-items: center;
@@ -209,6 +229,7 @@ img {
 .fondoInst .contenedorInst .cajaInst7 {
   grid-area: imagen3;
   border: 5px solid black;
+  margin-top: 3rem;
 }
 .fondoInst .contenedorInst .cajaInst8 {
   grid-area: imagen4;
@@ -264,29 +285,57 @@ img {
   background-color: black;
   padding: 2rem;
 }
-.contacto .contenedorUbicacion {
+.contacto .contenedorCont {
   padding: 4rem;
   display: flex;
-  flex-direction: column;
-  text-align: center;
   align-items: center;
+  width: 100%;
+  justify-content: space-around;
 }
-.contacto .contenedorUbicacion .estiloContacto {
+.contacto .contenedorCont .contenedorInfo .estiloContacto {
   padding: 2rem;
   color: white;
   font-family: "tenso", sans-serif;
 }
-.contacto .contenedorForm {
-  margin: 0rem 5rem 0rem 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 1rem;
-}
 .contacto .contenedorForm .form {
-  margin: 0.5rem;
+  color: white;
+  display: block;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border-right: transparent;
+  border-bottom: transparent;
+  width: 100%;
+  background-color: black;
+}
+.contacto .contenedorForm .nombre {
+  grid-area: nombre;
+}
+.contacto .contenedorForm .numero {
+  grid-area: numero;
+}
+.contacto .contenedorForm .mail {
+  grid-area: mail;
+}
+.contacto .contenedorForm .mensaje {
+  grid-area: mensaje;
+}
+.contacto .contenedorForm .enviar {
+  grid-area: enviar;
 }
 
+@media screen and (max-width: 800px) {
+  .contenedorCont {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedorCont .contenedorInfo {
+    text-align: start;
+  }
+  .contenedorCont .contenedorInfo .estiloContacto {
+    text-align: center;
+  }
+}
 footer {
   display: flex;
   justify-content: space-evenly;

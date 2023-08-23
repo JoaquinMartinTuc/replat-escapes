@@ -2,7 +2,6 @@
     background-color: #010101;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
     ".      foto"
     "titulo foto"
@@ -12,7 +11,9 @@
     "imgPr1  imgPr1"
     "imgPr2  imgPr2"
     "imgPr3  imgPr3"
-    "imgPr4  imgPr4";
+    "imgPr4  imgPr4"
+    "titulo2 titulo2"
+    "info2  info2";
     place-items: center;
     padding-bottom: 8rem;
 
@@ -38,6 +39,7 @@
         font-weight: 300;
         padding-left: 5rem;
         padding-right: 5rem;
+        width: 100%;
     }
     
     .caja-quehacemos3{
@@ -70,6 +72,24 @@
     .contenedor-proveedores5{
         grid-area: imgPr4;
     }
+
+    .cajaHistoria{
+        padding-top: 6rem;
+        color: white;
+        font-family: $fuentePrincipal;
+    }
+
+    .cajaHistoria1{
+        grid-area: titulo2;
+        text-align: center;
+    }
+
+    .cajaHistoria2{
+        padding: 3rem;
+        grid-area: info2;
+        text-align: center;
+        font-weight: 300;
+    }
 }
 
 
@@ -88,11 +108,22 @@
         .contenedor-proveedores1{
             align-self: center;
         }
+
+        
     
     }
 }
 
-    
+@media screen and (max-width: 480px) {
+
+    .contenedor-quehacemos{
+
+        .contenedor-proveedores3{
+            width: 100%;
+        }
+    }
+
+}
 
     
 

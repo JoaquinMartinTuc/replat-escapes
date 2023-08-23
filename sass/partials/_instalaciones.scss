@@ -5,12 +5,10 @@
   overflow-x: hidden;
 
   .contenedorInst {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding: 3rem;
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows:  0.4fr 1.6fr 1fr 1fr 1fr 1fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
       "texto1 . . . ."
@@ -47,6 +45,7 @@
       .cajaInst7 {
          grid-area: imagen3;
          border: 5px solid black;
+         margin-top: 3rem;
      }
       
       .cajaInst8 {
@@ -63,7 +62,6 @@
          grid-area: texto3;
          text-align: center;
      }
-
      
   }
 

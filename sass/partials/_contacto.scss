@@ -6,35 +6,79 @@
     background-color: black;
     padding: 2rem;
 
-    .contenedorUbicacion{
+    
+
+    .contenedorCont{
         padding: 4rem;
         display: flex;
-        flex-direction: column;
-        text-align: center;
         align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        
+        .contenedorInfo{
+            
     
-        .estiloContacto{
+            .estiloContacto{
+        
             padding: 2rem;
             color: white;
             font-family: $fuentePrincipal;
-        }
+            }
         
+        
+        }
     }
-    
-    .contenedorForm{
-        margin: 0rem 5rem 0rem 5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 1rem;
 
+    .contenedorForm{
+        
         .form{
-            margin: 0.5rem;
+            color: white;
+            display: block;
+            margin: 1rem;
+            padding: 0.5rem;
+            border-radius: 10px;
+            border-right: transparent;
+            border-bottom: transparent;
+            width: 100%;
+            background-color: black;
         }
 
+    
+        .nombre{
+            grid-area: nombre;
+        }
 
+        .numero{
+            grid-area: numero;
+        }
 
+        .mail{
+            grid-area: mail;
+        }
+
+        .mensaje{
+            grid-area: mensaje;
+        }
+
+        .enviar{
+            grid-area: enviar;
+        }
     }
 }
 
+@media screen and (max-width: 800px) {
+    
+    .contenedorCont{
+        display: flex;
+        flex-direction: column;
 
+
+        .contenedorInfo{
+            text-align: start;
+
+            .estiloContacto{
+                text-align: center;
+            }
+        }
+    }
+}

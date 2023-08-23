@@ -70,13 +70,20 @@
 
 
 @media screen and (max-width: 1200px) {
+.fondo-index{
     .contenedor-index{
         display: flex;
         flex-direction: column;
+        
 
-        @for $item from 1 through 3 {
-            .caja#{$item} {
-                align-self: center;
+            @for $item from 1 through 3 {
+                .caja#{$item} {
+                    align-self: center;
+                }
+            }
+
+            .caja1{
+                font-size: 1.4rem;
             }
         }
     }
